@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    margin: auto;
+    background-color: rgba(179, 29, 29, 0);
+    width: 90%;
+    max-width: 1000px;
+    border: 0;
+    border-radius: 50px 20px 20px 50px; /* Adjusted to be more reasonable */
+    box-shadow: 20px 20px 20px 1px rgba(194, 193, 193, 0.588);
+    overflow: hidden; /* Ensure content stays within rounded borders */
+}
+
+.welcome {
+    border-radius: 10px 0px 0px 10px ;
+    background-image: url(./stacked-waves-haikei\ \(1\).svg);
+    background-size: cover;
+    width: 500px;
+   float: left;
+    height: 610px;
+     transition: 0.7s;
+}
+
+.welcome:hover {
+    background-position-x: -100px;
+    transition: 0.7s;
+}
+
+.back {
+    color: white;
+    font-size: 2.5em; 
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20%; /* Adjusted for better responsiveness */
+}
+
+.logo {
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.form {
+    border-radius: 10px;
+    float: left;
+    width: 50%; 
+    padding: 20px; /* Added padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.login {
+    font-size: 2em; 
+}
+
+.disc {
+    color: rgb(150, 147, 147);
+}
+
+.nametext {
+    color: rgb(150, 147, 147);
+    margin-top: 10%;
+}
+
+.email, .password {
+    padding: 15px;
+    width: 70%; /* Full width */
+    border-radius: 7px;
+    border-color: rgb(182, 181, 181);
+    border-style: solid;
+    margin-bottom: 7%;
+}
+
+.pass {
+    color: rgb(150, 147, 147);
+    margin-top: 20%;
+}
+
+.checkbox {
+    background-color: white;
+    border: 0;
+    margin-top: 20px;
+}
+
+.forgot {
+    color: rgb(150, 147, 147);
+    text-decoration: none;
+    margin-left: 10px; /* Reduced margin for better spacing */
+}
+
+.loginbtn {
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(118, 19, 230);
+    border: 0;
+    padding: 15px;
+    width: 70%; /* Full width */
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block; /* Ensure link styles properly */
+    text-align: center; /* Center text */
+}
+
+.loginlink {
+    color: white;
+    text-decoration: none;
+}
+
+.newuser {
+    color: rgb(150, 147, 147);
+    text-decoration: none;
+    display: inline-block; /* Ensure link styles properly */
+    margin-top: 10px; /* Add some spacing */
+}
+
+.signup {
+    color: rgb(118, 19, 230);
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .welcome, .form {
+        width: 100%;
+        float: none;
+        height: auto;
+        border-radius: 10px 10px 10px 10px ;
+    }
+
+    .back {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+}
